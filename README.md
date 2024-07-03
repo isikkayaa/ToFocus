@@ -1,6 +1,10 @@
 # ToFocus-AndroidApp
  Education Utility with Android Application
 
+To-do list service for the user to determine what needs to be done, Pomodoro technique for time management and efficient work during class time, short games to avoid loss of focus during break time, Analysis shows how productive the user is during the day.
+![image](https://github.com/isikkayaa/ToFocus/assets/102810563/3659d212-48c9-4eb8-8622-7306787c1c46)
+
+
 RecyclerView, MVVM, Room, Firebase technologies are used.
 
 RecyclerView is used for listing items. It is a list structure for sliding items in dynamic way.
