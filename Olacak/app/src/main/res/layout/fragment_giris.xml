@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FEEEFE"
+    tools:context=".ui.fragment.GirisFragment">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Welcome ToFocus!"
+        android:textAllCaps="true"
+        android:textColor="#A35180"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#BFF5E2"
+        android:text="Create Account"
+        android:textColor="#A35180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#BFF5E2"
+        android:text="Login"
+        android:textColor="#A35180"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="241dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="84dp"
+        android:background="#FDF6FE"
+        android:backgroundTint="#FDF6FE"
+        android:foregroundTint="#000000"
+        android:src="@drawable/giris3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

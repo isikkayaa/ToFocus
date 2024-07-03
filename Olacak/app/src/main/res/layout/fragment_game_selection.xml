@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.GameSelectionFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="118dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="93dp"
+        android:src="@drawable/baseline_timer_3_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSnake"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="72dp"
+        android:text="Snake Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/buttonHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="32dp"
+        android:text="Hangman Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMemory"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="81dp"
+        android:text="Memory Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSnake" />
+
+    <Button
+        android:id="@+id/buttonMath"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/app_name_math"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHang" />
+
+    <Button
+        android:id="@+id/buttonBrick"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:text="Brick Braker Game"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMemory" />
+
+    <Button
+        android:id="@+id/buttonTicTacToe"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="36dp"
+        android:text="TicTacToe Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMath" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

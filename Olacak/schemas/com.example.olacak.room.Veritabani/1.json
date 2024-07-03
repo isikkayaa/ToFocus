@@ -1,0 +1,46 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "279389b8657c515f13cddcd1ae1da51d",
+    "entities": [
+      {
+        "tableName": "Gorevler",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`gorev_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `gorev_adi` TEXT NOT NULL, `gorev_aciklamasi` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "gorev_id",
+            "columnName": "gorev_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gorev_adi",
+            "columnName": "gorev_adi",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gorev_aciklamasi",
+            "columnName": "gorev_aciklamasi",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "gorev_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '279389b8657c515f13cddcd1ae1da51d')"
+    ]
+  }
+}

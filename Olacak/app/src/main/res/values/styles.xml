@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Theme.Olacak" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Diğer stil özellikleri -->
+
+
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- Diğer stil özellikleri -->
+    </style>
+
+
+
+
+
+
+
+
+</resources>

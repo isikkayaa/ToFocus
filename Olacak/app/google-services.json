@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "381732308314",
+    "project_id": "egitim-f42e5",
+    "storage_bucket": "egitim-f42e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381732308314:android:1669f18c4d5f1af839df63",
+        "android_client_info": {
+          "package_name": "com.example.olacak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381732308314-lg9j34b5pjcq3i0d67tjr38rk84fb928.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.olacak",
+            "certificate_hash": "a0188093fdc79c3b5b759b32eb1e589babd82e57"
+          }
+        },
+        {
+          "client_id": "381732308314-cf6p7p4bp0h1q1diisdgeps0rgfkq36j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_TBYQpqWJFJ5xq9I_xeZQxJqplFU63Rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381732308314-cf6p7p4bp0h1q1diisdgeps0rgfkq36j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

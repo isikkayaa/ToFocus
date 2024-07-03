@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="anasayfaFragment"
+            type="com.example.olacak.ui.fragment.AnasayfaFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.example.olacak.ui.viewmodel.AnasayfaViewModel" />
+
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.fragment.AnasayfaFragment">
+
+            <LinearLayout
+                android:layout_width="423dp"
+                android:layout_height="662dp"
+                android:layout_marginTop="78dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fab">
+
+                <TextView
+                    android:id="@+id/textViewSta"
+                    android:layout_width="406dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:text="Statistics"
+                    android:textAlignment="textStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="399dp"
+                    android:layout_height="468dp"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/todayBtn"
+                            android:layout_width="258dp"
+                            android:layout_height="51dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#A35180"
+                            android:text="TODAY"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.496"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="335dp"
+                        android:layout_marginTop="1dp">
+
+
+                    </com.github.mikephil.charting.charts.BarChart>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonLets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#A35180"
+                android:clickable="true"
+                android:onClick="@{() -> anasayfaFragment.letGecis(buttonLets)}"
+                android:text="Let's Study!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="61dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="328dp"
+                android:layout_marginEnd="180dp"
+                android:clickable="true"
+                android:onClick="@{() -> anasayfaFragment.fabTikla(fab)}"
+                android:src="@drawable/baseline_add_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="228dp"
+                android:layout_height="224dp"
+                android:layout_marginTop="68dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:layout_constraintEnd_toStartOf="@+id/buttonLets"
+                app:layout_constraintHorizontal_bias="0.64"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spanCount="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="104dp"
+                android:layout_height="73dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/sf_pro_text_semibold"
+                android:text="@{`Hello ` + viewModel.userName + `!`}"
+                android:textAlignment="center"
+                android:textColor="#A45181"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

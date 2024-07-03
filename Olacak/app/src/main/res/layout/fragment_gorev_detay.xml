@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="gorevNesnesi"
+            type="com.example.olacak.data.entity.Gorevler" />
+
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FEEEFE"
+        tools:context=".ui.fragment.GorevDetayFragment">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="291dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="189dp"
+            android:layout_marginEnd="57dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskAdi"
+                android:layout_width="288dp"
+                android:layout_height="57dp"
+                android:hint="Task Name :"
+                android:text="@={gorevNesnesi.gorev_adi}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="301dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="311dp"
+            android:layout_marginEnd="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTaskAciklama"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:hint="Task Note :"
+                android:text="@={gorevNesnesi.gorev_aciklamasi}"
+                android:textAlignment="viewStart" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonGuncelle"
+            android:layout_width="171dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="75dp"
+            android:backgroundTint="#A35180"
+            android:text="UPDATE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

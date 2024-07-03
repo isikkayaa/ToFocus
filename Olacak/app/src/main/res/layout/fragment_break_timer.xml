@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FEEEFE"
+        tools:context=".ui.fragment.BreakTimerFragment">
+
+
+        <Button
+            android:id="@+id/buttonFinishBreak"
+            android:layout_width="125dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="#A35180"
+            android:text="Fınısh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStopResumeBreak" />
+
+        <Button
+            android:id="@+id/buttonGame"
+            android:layout_width="125dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="65dp"
+            android:backgroundTint="#A35180"
+            android:text="Games"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStopResumeBreak" />
+
+        <TextView
+            android:id="@+id/timerBreak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="176dp"
+            android:text="@string/initial_value"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonStopResumeBreak"
+            android:layout_width="181dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="169dp"
+            android:backgroundTint="#A35180"
+            android:text="@string/stop_break"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timerBreak" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
