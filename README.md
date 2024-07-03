@@ -8,4 +8,8 @@ MVVM is a clean architecture. It is abbrevation of Model - View - ViewModel. Mod
 
 Room is an library for using the SQlite. 
 
-Firebase 
+Firebase is used for authenticate users to application.  It supports authentication using emails, password popular federated identity providers like Google.
+
+
+
+
