@@ -1,6 +1,7 @@
 # ToFocus-AndroidApp
  Education Utility with Android Application
 
+RecyclerView, MVVM, Room, Firebase technologies are used.
 
 RecyclerView is used for listing items. It is a list structure for sliding items in dynamic way.
 
