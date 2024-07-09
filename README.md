@@ -14,6 +14,8 @@ Room is an library for using the SQlite.
 
 Firebase is used for authenticate users to application.  It supports authentication using emails, password popular federated identity providers like Google.
 
+Dagger Hilt is used as library for dependency injection. 
+
 ![a](https://github.com/isikkayaa/ToFocus/assets/102810563/23294442-bc1a-480a-8781-33c8c4932249)
 ![c](https://github.com/isikkayaa/ToFocus/assets/102810563/3cbafae1-1c06-414a-b5a7-094faad00d39)
 
